@@ -6,6 +6,6 @@ This project has a couple purposes
 * To gain abilities with web development
 
 ### TODO:
-[ ] Converatl all Processing projects into P5 projects for web hosting
-[ ] Make About page with contact information (Resume here too?)
-[ ] Upload all personal projects with links to repository
+- [ ] Converatl all Processing projects into P5 projects for web hosting
+- [ ] Make About page with contact information (Resume here too?)
+- [ ] Upload all personal projects with links to repository
