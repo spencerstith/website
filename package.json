@@ -1,0 +1,22 @@
+{
+    "name": "spencerstith",
+    "version": "1.0.0",
+    "description": "Spencer Stith's Portfolio",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/spencerstith/website.git"
+    },
+    "author": "Spencer Stith",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/spencerstith/website/issues"
+    },
+    "homepage": "https://github.com/spencerstith/website#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
