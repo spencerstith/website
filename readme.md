@@ -9,3 +9,4 @@ This project has a couple purposes
 - [ ] Converatl all Processing projects into P5 projects for web hosting
 - [ ] Make About page with contact information (Resume here too?)
 - [ ] Upload all personal projects with links to repository
+- [ ] Migrate from PUG to Mustache View Engine
