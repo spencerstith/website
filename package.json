@@ -1,22 +1,21 @@
 {
-    "name": "spencerstith",
-    "version": "1.0.0",
-    "description": "Spencer Stith's Portfolio",
-    "main": "index.js",
+    "name": "website",
+    "version": "0.0.0",
+    "private": true,
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "node ./bin/www",
+        "devstart": "nodemon ./bin/www",
+        "serverstart": "DEBUG=express-locallibrary-tutorial:* npm run devstart"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/spencerstith/website.git"
-    },
-    "author": "Spencer Stith",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/spencerstith/website/issues"
-    },
-    "homepage": "https://github.com/spencerstith/website#readme",
     "dependencies": {
-        "express": "^4.17.1"
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "express": "~4.16.1",
+        "http-errors": "~1.6.3",
+        "morgan": "~1.9.1",
+        "pug": "^3.0.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
     }
 }
