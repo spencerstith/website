@@ -3,6 +3,14 @@
 
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+
+    <style>
+        #tile-img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projects | Spencer Stith</title>
 </head>
@@ -47,6 +55,73 @@
     </section>
 
     <!--PAGE-->
+    <section class="section">
+        <h1 class="title">Current & Past Projects</h1>
+        <p class="subtitle">All of these projects also have links to their repository on GitHub. I am always starting new projects and learning as much as possible.</p>
+    </section>
+    <section class="section">
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-danger">
+                        <p class="title">Generative Art</p>
+                        <p class="subtitle">This will take you to a complete list of all of my geneartive art creations. There are a lot of them, so it would be better for them to have their own home.
+                        </p>
+                        <div class="content">
+                            <figure class="image is-4by3">
+                                <img src="/generative.png">
+                            </figure>
+                        </div>
+                    </article>
+                </div>
+                <div class="tile">
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child notification is-primary">
+                            <p class="title">Vertical...</p>
+                            <p class="subtitle">Top tile</p>
+                        </article>
+                        <article class="tile is-child notification is-warning">
+                            <p class="title">...tiles</p>
+                            <p class="subtitle">Bottom tile</p>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-info">
+                            <p class="title">Middle tile</p>
+                            <p class="subtitle">With an image</p>
+
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-success">
+                    <div class="content">
+                        <p class="title">This website</p>
+                        <p class="subtitle">I made this entire website myself.</p>
+                        <div class="content">
+                            <p class="subtitle">I made this entire website myself. The entire process has taught me a lot! I have learned about front and back end using Node.js and Express.js (with various middlewares) and this site also uses
+                                <a href="http://www.bulma.io">Bulma</a> as a CSS framework.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+
+        <!--
+        <div class="columns is-vcentered">
+            <figure class="column image is-32x32">
+                <img src="/generative.png">
+            </figure>
+            <div class="column title is-primary">Generative Art</div>
+            <div class="column subtitle">This will take you to a page specifically for all of my generative art projects.</div>
+        </div>
+    -->
+    </section>
+
 </body>
 
 </html>

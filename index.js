@@ -23,6 +23,8 @@ app.get('/about', (req, res) => {
     res.sendFile(path.join(__dirname, '/pages/about.html'));
 });
 
+app.use(express.static(__dirname + '/img'));
+
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
 });
