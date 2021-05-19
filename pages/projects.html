@@ -65,11 +65,11 @@
                 <div class="tile is-parent">
                     <article class="tile is-child notification is-danger">
                         <p class="title">Generative Art</p>
-                        <p class="subtitle">This will take you to a complete list of all of my geneartive art creations. There are a lot of them, so it would be better for them to have their own home.
+                        <p class="subtitle">This will take you to a complete list of all of my generative art creations. There are a lot of them, so it would be better for them to have their own home.
                         </p>
                         <div class="content">
                             <figure class="image is-4by3">
-                                <img src="/generative.png">
+                                <img id="generative-image">
                             </figure>
                         </div>
                     </article>
@@ -101,7 +101,7 @@
                         <p class="title">This website</p>
                         <p class="subtitle">I made this entire website myself.</p>
                         <div class="content">
-                            <p class="subtitle">I made this entire website myself. The entire process has taught me a lot! I have learned about front and back end using Node.js and Express.js (with various middlewares) and this site also uses
+                            <p class="subtitle">The entire process has taught me a lot! I have learned about front and back end using Node.js and Express.js (with various middlewares) and this site also uses
                                 <a href="http://www.bulma.io">Bulma</a> as a CSS framework.
                             </p>
                         </div>
@@ -109,19 +109,14 @@
                 </article>
             </div>
         </div>
-
-
-        <!--
-        <div class="columns is-vcentered">
-            <figure class="column image is-32x32">
-                <img src="/generative.png">
-            </figure>
-            <div class="column title is-primary">Generative Art</div>
-            <div class="column subtitle">This will take you to a page specifically for all of my generative art projects.</div>
-        </div>
-    -->
     </section>
 
+    <script>
+        // Determine image for the generative art link
+        const choices = ["hair.gif"];
+        var chosen = choices[Math.floor(Math.random() * choices.length)];
+        document.getElementById("generative-image").src = "generative/" + chosen;
+    </script>
 </body>
 
 </html>
