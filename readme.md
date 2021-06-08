@@ -1,5 +1,5 @@
 # Spencer Stith's Website
-This is the repository for my [personal website](spencerstith.com)
+This is the repository for my [personal website](http://www.spencerstith.com)
 
 This project has a couple purposes
 * To host my personal portfolio, including Processing sketches
