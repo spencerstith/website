@@ -20,7 +20,9 @@ function loadGenProjects() {
             columns.append(imageCol).append(descCol);
 
             var box = $('<div class="box">').html(columns);
-            $("#" + col).append(box);
+
+            var link = $(`<a href=${proj.link} target="_blank" rel="noopener noreferrer">`).html(box);
+            $("#" + col).append(link);
         });
     })
 }

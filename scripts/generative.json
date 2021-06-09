@@ -4,35 +4,35 @@
             "title": "Testing of tests",
             "description": "This is simply a test description. I hope this jQuery works out easily.",
             "image": "color-scape.png",
-            "link": "https://github.com/spencerstith"
+            "link": "#"
         },
         {
             "id": 2,
             "title": "Testing of cols",
             "description": "This is simply a test description. I hope the columns do good!.",
             "image": "color-scape.png",
-            "link": "https://github.com/spencerstith"
+            "link": "#"
         },
         {
             "id": 3,
             "title": "Testing of cols",
             "description": "This is simply a test description. I hope the columns do good!.",
             "image": "color-scape.png",
-            "link": "https://github.com/spencerstith"
+            "link": "#"
         },
         {
             "id": 5,
             "title": "Testing of cols",
             "description": "This is simply a test description. I hope the columns do good!.",
             "image": "color-scape.png",
-            "link": "https://github.com/spencerstith"
+            "link": "#"
         },
         {
             "id": 5,
             "title": "Testing of cols",
             "description": "This is simply a test description. I hope the columns do good!.",
             "image": "color-scape.png",
-            "link": "https://github.com/spencerstith"
+            "link": "#"
         }
     ]
 }
