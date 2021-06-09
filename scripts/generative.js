@@ -1,4 +1,4 @@
-function loadGenProjects() {
+function loadProjects() {
     const columnCount = 3;
     $.getJSON("generative.json", function(json) {
         var columns = $('<div class="columns is-desktop has-text-centered">');
@@ -12,8 +12,10 @@ function loadGenProjects() {
             var image = $('<figure class="image">').append($(`<img src="generative/${proj.image}">`));
             var title = $(`<h1 class="title">${proj.title}</h1>`);
             var desc = $(`<p>${proj.description}</p>`);
+            var tags = $('<div class="tags">');
+            var tags = $(`<span class="tag is-light is-danger">${proj.tag}</span><span class="tag is-light is-link">${proj.language}</span>`);
 
-            box.append(image).append(title).append(desc);
+            box.append(image).append(title).append(desc).append(tags);
             column.append(anchor.append(box));
             columns.append(column);
 
@@ -26,11 +28,7 @@ function loadGenProjects() {
                 $("#projects").append(columns);
 
                 columns = $('<div class="columns is-desktop has-text-centered">');
-
             }
-
-            //var link = $(`<a href=${proj.link} target="_blank" rel="noopener noreferrer">`).html(box);
-            //$(`#col${col}`).append(link);
         });
     })
 }
