@@ -1,11 +1,11 @@
 {
     "projects": [{
             "id": 1,
-            "title": "Testing of tests",
+            "title": "Purple Rain",
             "tag": "Generative",
             "language": "p5.js",
-            "description": "This is simply a test description. I hope this jQuery works out easily.",
-            "image": "color-scape.png",
+            "description": "I made this for my wife when she was out of town. It says 'i miss you' over some purple rain.",
+            "image": "project-01-shot.png",
             "link": "#"
         },
         {

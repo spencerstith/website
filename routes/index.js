@@ -18,4 +18,8 @@ router.get('/generative', (req, res) => {
     res.sendFile(path.join(__dirname, '../pages/generative.html'));
 });
 
+router.get('/development', (req, res) => {
+    res.sendFile(path.join(__dirname, '../pages/development.html'));
+});
+
 module.exports = router;
