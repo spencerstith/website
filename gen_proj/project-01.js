@@ -1,9 +1,9 @@
 let drops;
-let saved = false;;
+let saved = false;
 
 function setup() {
     createCanvas(600, 600);
-    stroke(200, 0, 255);
+    //stroke(200, 0, 255);
     drops = [];
     let xVel = random(-10, 10);
     for (let i = 0; i < 200; i++) {
@@ -16,6 +16,7 @@ function setup() {
             ),
             size
         );
+        drop.particle.setColor({ r: 200, g: 0, b: 200 });
         drops.push(drop);
     }
     textSize(25);
@@ -52,7 +53,7 @@ class Drop {
         }
 
         strokeWeight(this.size);
-        stroke(200, 0, 200);
+        //stroke(200, 0, 200);
         this.particle.show();
         this.particle.update();
     }

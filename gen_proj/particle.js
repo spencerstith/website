@@ -6,7 +6,16 @@ class Particle {
         this.acc = acc;
     }
 
+    setColor(col) {
+        this.color = col;
+    }
+
     show() {
+        if (typeof this.color === 'object' && this.color !== 'null') {
+            stroke(this.color == undefined ? 255 : this.color.r, this.color.g, this.color.b);
+        } else {
+            stroke(this.color == undefined ? 255 : this.color);
+        }
         point(this.pos.x, this.pos.y, this.pos.z);
     }
 

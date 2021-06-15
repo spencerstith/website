@@ -10,11 +10,11 @@
         },
         {
             "id": 2,
-            "title": "Testing of cols",
-            "tag": "Generative",
+            "title": "Backtracking Sudoku Solver",
+            "tag": "Algorithms",
             "language": "p5.js",
-            "description": "This is simply a test description. I hope the columns do good!.",
-            "image": "color-scape.png",
+            "description": "This using recursive backracking to solve any Sudoku board. It is slightly modified in order to draw progress every frame.",
+            "image": "project-02-shot.png",
             "link": "#"
         },
         {
