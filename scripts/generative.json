@@ -15,7 +15,7 @@
             "language": "p5.js",
             "description": "This using recursive backracking to solve any Sudoku board. It is slightly modified in order to draw progress every frame.",
             "image": "project-02-shot.png",
-            "link": "#"
+            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/project-02.js"
         },
         {
             "id": 3,
