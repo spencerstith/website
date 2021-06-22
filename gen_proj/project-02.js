@@ -1,5 +1,4 @@
 let board;
-let permBoard;
 let cp;
 let forwards;
 
@@ -18,8 +17,19 @@ function setup() {
         [0, 0, 5, 2, 0, 6, 3, 0, 0]
 
     ];
-    board.populate(values, true);
-    permBoard = solidify(values);
+    let cells = [];
+    for (let i = 0; i < values.length; i++) {
+        let row = [];
+        for (let j = 0; j < values[i].length; j++) {
+            row.push(new Cell(
+                0,
+                values[i][j],
+                values[i][j] ? true : false
+            ))
+        }
+        cells.push(row);
+    }
+    board.populate(cells, true);
     fill(255);
     stroke(255);
     textAlign(CENTER, CENTER);
@@ -31,7 +41,8 @@ function setup() {
 
 function draw() {
     // Finds the next position, either next or previous. Accounts for multiple permanent tiles in a row.
-    while (permBoard[cp.i][cp.j]) {
+    while (board.cells[cp.i][cp.j].tf) {
+        console.log(cp.i, cp.j);
         if (forwards) {
             cp = board.getNextPosition(cp.i, cp.j);
         } else {
@@ -51,9 +62,9 @@ function draw() {
      *      Make current position the next available spot
      */
     while (true) {
-        board.data[cp.i][cp.j]++;
-        if (board.data[cp.i][cp.j] >= 10) {
-            board.data[cp.i][cp.j] = 0;
+        board.cells[cp.i][cp.j].value++;
+        if (board.cells[cp.i][cp.j].value >= 10) {
+            board.cells[cp.i][cp.j].value = 0;
             cp = board.getPreviousPosition(cp.i, cp.j);
             forwards = false;
             break;
@@ -80,12 +91,12 @@ function isValidAtPosition(i, j) {
 
 function isValidRow(row) {
     let checked = [];
-    for (let j = 0; j < board.data[row].length; j++) {
-        if (board.data[row][j] != 0) {
-            if (checked.includes(board.data[row][j])) {
+    for (let j = 0; j < board.cells[row].length; j++) {
+        if (board.cells[row][j].value != 0) {
+            if (checked.includes(board.cells[row][j].value)) {
                 return false;
             } else {
-                checked.push(board.data[row][j]);
+                checked.push(board.cells[row][j].value);
             }
         }
     }
@@ -94,12 +105,12 @@ function isValidRow(row) {
 
 function isValidColumn(col) {
     let checked = [];
-    for (let i = 0; i < board.data.length; i++) {
-        if (board.data[i][col] != 0) {
-            if (checked.includes(board.data[i][col])) {
+    for (let i = 0; i < board.cells.length; i++) {
+        if (board.cells[i][col].value != 0) {
+            if (checked.includes(board.cells[i][col].value)) {
                 return false;
             } else {
-                checked.push(board.data[i][col]);
+                checked.push(board.cells[i][col].value);
             }
         }
     }
@@ -116,30 +127,14 @@ function isValidSquare(i, j) {
     let checked = [];
     for (let m = 0; m < 3; m++) {
         for (let n = 0; n < 3; n++) {
-            if (board.data[startI + m][startJ + n] != 0) {
-                if (checked.includes(board.data[startI + m][startJ + n])) {
+            if (board.cells[startI + m][startJ + n].value != 0) {
+                if (checked.includes(board.cells[startI + m][startJ + n].value)) {
                     return false;
                 } else {
-                    checked.push(board.data[startI + m][startJ + n]);
+                    checked.push(board.cells[startI + m][startJ + n].value);
                 }
             }
         }
     }
     return true;
-}
-
-function solidify(data) {
-    perm = []
-    data.forEach(row => {
-        let permRow = []
-        row.forEach(value => {
-            if (value == 0) {
-                permRow.push(false);
-            } else {
-                permRow.push(true);
-            }
-        });
-        perm.push(permRow);
-    });
-    return perm;
 }
