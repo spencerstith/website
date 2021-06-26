@@ -19,30 +19,12 @@
         },
         {
             "id": 3,
-            "title": "Testing of cols",
-            "tag": "Generative",
+            "title": "Maze Generator",
+            "tag": "Algorithms",
             "language": "p5.js",
-            "description": "This is simply a test description. I hope the columns do good!.",
-            "image": "color-scape.png",
-            "link": "#"
-        },
-        {
-            "id": 5,
-            "title": "Testing of cols",
-            "tag": "Generative",
-            "language": "p5.js",
-            "description": "This is simply a test description. I hope the columns do good!.",
-            "image": "color-scape.png",
-            "link": "#"
-        },
-        {
-            "id": 5,
-            "title": "Testing of cols",
-            "tag": "Generative",
-            "language": "p5.js",
-            "description": "This is simply a test description. I hope the columns do good!.",
-            "image": "color-scape.png",
-            "link": "#"
+            "description": "Creates a maze from a grid of cells using stack data structures and random choice.",
+            "image": "project-03-shot.png",
+            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/project-03.js"
         }
     ]
 }
