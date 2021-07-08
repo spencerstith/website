@@ -25,6 +25,24 @@
             "description": "Creates a maze from a grid of cells using stack data structures and random choice.",
             "image": "project-03-shot.png",
             "link": "https://github.com/spencerstith/website/blob/master/gen_proj/project-03.js"
+        },
+        {
+            "id": 5,
+            "title": "Times Tables",
+            "tag": "Algorithms",
+            "language": "p5.js",
+            "description": "Connection between the Maldebrot Set and times tables. Inspired by Mathologer on YouTube.",
+            "image": "project-05-shot.png",
+            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/project-05.js"
+        },
+        {
+            "id": 6,
+            "title": "Circle Intersections",
+            "tag": "Algorithms",
+            "language": "p5.js",
+            "description": "Intersections between horizontal and vertical vircles at different rates.",
+            "image": "project-06-shot.png",
+            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/project-05.js"
         }
     ]
 }
