@@ -31,9 +31,6 @@ function draw() {
     fill(255);
     noStroke();
     text("i miss you", width * 0.75, height * 0.25);
-    if (frameCount == 100) {
-        saveFrames("project-01-shot", "png", 1, 1);
-    }
 }
 
 class Drop {

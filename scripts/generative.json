@@ -5,17 +5,17 @@
             "tag": "Generative",
             "language": "p5.js",
             "description": "I made this for my wife when she was out of town. It says 'i miss you' over some purple rain.",
-            "image": "project-01-shot.png",
-            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/project-01.js"
+            "image": "purple-rain.png",
+            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/purple-rain.js"
         },
         {
             "id": 2,
             "title": "Backtracking Sudoku Solver",
             "tag": "Algorithms",
             "language": "p5.js",
-            "description": "This using recursive backracking to solve any Sudoku board. It is slightly modified in order to draw progress every frame.",
-            "image": "project-02-shot.png",
-            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/project-02.js"
+            "description": "This using recursive backtracking to solve any Sudoku board. It is slightly modified in order to draw progress every frame.",
+            "image": "sudoku.png",
+            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/sudoku.js"
         },
         {
             "id": 3,
@@ -23,26 +23,26 @@
             "tag": "Algorithms",
             "language": "p5.js",
             "description": "Creates a maze from a grid of cells using stack data structures and random choice.",
-            "image": "project-03-shot.png",
-            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/project-03.js"
+            "image": "maze.png",
+            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/maze.js"
         },
         {
             "id": 5,
             "title": "Times Tables",
             "tag": "Algorithms",
             "language": "p5.js",
-            "description": "Connection between the Maldebrot Set and times tables. Inspired by Mathologer on YouTube.",
-            "image": "project-05-shot.png",
-            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/project-05.js"
+            "description": "Connection between the Mandelbrot Set and times tables. Inspired by Mathologer on YouTube.",
+            "image": "t-tables.png",
+            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/t-tables.js"
         },
         {
             "id": 6,
             "title": "Circle Intersections",
             "tag": "Algorithms",
             "language": "p5.js",
-            "description": "Intersections between horizontal and vertical vircles at different rates.",
-            "image": "project-06-shot.png",
-            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/project-05.js"
+            "description": "Intersections between horizontal and vertical circles at different rates.",
+            "image": "intersections.png",
+            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/intersections.js"
         }
     ]
 }

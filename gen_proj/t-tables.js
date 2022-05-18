@@ -24,10 +24,6 @@ function draw() {
         let next = getLocation(getNextAngle(i));
         line(temp.x, temp.y, next.x, next.y);
     }
-
-    if (frameCount == 100) {
-        saveFrames("project-05-shot", "png", 1, 1);
-    }
 }
 
 function getNextAngle(input) {
