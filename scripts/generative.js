@@ -23,7 +23,6 @@ function loadProjects() {
                 while (columnNumber < columnCount) {
                     columns.append($('<div class="column">'));
                     columnNumber++;
-                    console.log("in loop")
                 }
                 $("#projects").append(columns);
 
