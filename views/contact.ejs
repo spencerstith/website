@@ -2,49 +2,11 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact | Spencer Stith</title>
+  <%- include('partials/head'); %> 
 </head>
 
 <body>
-  <!--NAVBAR & HEADER-->
-  <section class="hero is-primary">
-    <div class="hero-head">
-      <nav class="navbar">
-        <div class="container">
-          <div class="navbar-brand">
-            <a class="navbar-item" href="/">
-              <img src="signiature1.png">
-            </a>
-            <span class="navbar-burger" data-target="navbarMenuHeroA">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </div>
-          <div id="navbarMenuHeroA" class="navbar-menu">
-            <div class="navbar-end">
-              <a class="navbar-item" href="/">
-                Home
-              </a>
-              <a class="navbar-item" href="/projects">
-                Projects
-              </a>
-              <a class="navbar-item is-active" href="/contact">
-                Contact
-              </a>
-              <span class="navbar-item">
-                <a class="button is-dark" href="http://github.com/spencerstith">
-                  <span>GitHub</span>
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </section>
+  <%- include('partials/nav'); %> 
 
   <!--PAGE-->
   <section class="section">
@@ -60,7 +22,7 @@
               <div class="columns is-vcentered">
                 <div class="column">
                   <figure class="image is-128x128">
-                    <img src="linkedin.png">
+                    <img src="img/linkedin.png">
                   </figure>
                 </div>
                 <div class="column">
@@ -84,7 +46,7 @@
               <div class="columns is-vcentered">
                 <div class="column">
                   <figure class="image is-128x128">
-                    <img src="email.png">
+                    <img src="img/email.png">
                   </figure>
                 </div>
                 <div class="column">
@@ -106,7 +68,7 @@
       <div class="column">
         <div class="box">
           <h1 class="title">
-            Possible form submission
+            
           </h1>
         </div>
 
@@ -114,5 +76,6 @@
     </div>
   </section>
 </body>
+<%- include('partials/scripts'); %>
 
 </html>

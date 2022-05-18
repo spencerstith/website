@@ -2,24 +2,24 @@ var express = require('express');
 var path = require('path');
 var router = express.Router();
 
-router.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../pages/index.html'));
+router.get('/', (req, res, next) => {
+  res.render('index', {page: 'Home', menuId: 'home'});
 })
 
 router.get('/projects', (req, res) => {
-  res.sendFile(path.join(__dirname, '../pages/projects.html'));
+  res.render('projects', {page: 'Projects', menuId: 'projects'});
 });
 
 router.get('/contact', (req, res) => {
-  res.sendFile(path.join(__dirname, '../pages/contact.html'));
+  res.render('contact', {page: 'Contact', menuId: 'contact'});
 });
 
 router.get('/generative', (req, res) => {
-  res.sendFile(path.join(__dirname, '../pages/generative.html'));
+  res.render('generative', {page: 'Generative', menuId: 'generative'});
 });
 
 router.get('/development', (req, res) => {
-  res.sendFile(path.join(__dirname, '../pages/development.html'));
+  res.render('development', {page: 'Development', menuId: 'development'});
 });
 
 module.exports = router;

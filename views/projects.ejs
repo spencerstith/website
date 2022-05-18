@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include('partials/head'); %> 
+  <script src="scripts/generative.js"></script>
+</head>
+
+<body>
+  <%- include('partials/nav'); %> 
+
+  <section class="section">
+    <h1 class="title">Current & Past Projects</h1>
+    <p class="subtitle">All of these projects also have links to their repository on GitHub. I am always starting new
+      projects and learning as much as possible.</p>
+  </section>
+  <section id="projects" class="section"></section>
+</body>
+<%- include('partials/scripts'); %>
+<script>
+  populateProjects();
+</script>
+
+</html>

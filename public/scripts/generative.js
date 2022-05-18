@@ -1,6 +1,6 @@
-function loadProjects() {
+function populateProjects() {
   const columnCount = 3;
-  $.getJSON("generative.json", function (json) {
+  $.getJSON("./generative.json", function (json) {
     var columns = $('<div class="columns is-desktop has-text-centered">');
     json.projects.forEach((proj, index) => {
       // Determine which column this should go in
