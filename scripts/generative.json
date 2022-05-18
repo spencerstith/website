@@ -1,47 +1,42 @@
 {
     "projects": [{
-            "id": 1,
             "title": "Purple Rain",
             "tag": "Generative",
             "language": "p5.js",
             "description": "I made this for my wife when she was out of town. It says 'i miss you' over some purple rain.",
-            "image": "purple-rain.png",
+            "name": "purple-rain",
             "link": "https://github.com/spencerstith/website/blob/master/gen_proj/purple-rain.js"
         },
         {
-            "id": 2,
             "title": "Backtracking Sudoku Solver",
             "tag": "Algorithms",
             "language": "p5.js",
             "description": "This using recursive backtracking to solve any Sudoku board. It is slightly modified in order to draw progress every frame.",
-            "image": "sudoku.png",
+            "name": "sudoku",
             "link": "https://github.com/spencerstith/website/blob/master/gen_proj/sudoku.js"
         },
         {
-            "id": 3,
             "title": "Maze Generator",
             "tag": "Algorithms",
             "language": "p5.js",
             "description": "Creates a maze from a grid of cells using stack data structures and random choice.",
-            "image": "maze.png",
+            "name": "maze",
             "link": "https://github.com/spencerstith/website/blob/master/gen_proj/maze.js"
         },
         {
-            "id": 5,
             "title": "Times Tables",
             "tag": "Algorithms",
             "language": "p5.js",
             "description": "Connection between the Mandelbrot Set and times tables. Inspired by Mathologer on YouTube.",
-            "image": "t-tables.png",
+            "name": "t-tables",
             "link": "https://github.com/spencerstith/website/blob/master/gen_proj/t-tables.js"
         },
         {
-            "id": 6,
             "title": "Circle Intersections",
             "tag": "Algorithms",
             "language": "p5.js",
             "description": "Intersections between horizontal and vertical circles at different rates.",
-            "image": "intersections.png",
+            "name": "intersections",
             "link": "https://github.com/spencerstith/website/blob/master/gen_proj/intersections.js"
         }
     ]
