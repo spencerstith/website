@@ -21,7 +21,6 @@
 </body>
 
 <script type="text/javascript">
-  var el = $('<div>');
   const columnCount = 3;
   var columns = $('<div class="columns is-desktop has-text-centered">');
   var len = <%- projects.length %>
@@ -32,12 +31,11 @@
     index++;
 
     var column = $('<div class="column">');
-    var anchor = $(`<a href="/development?proj=<%- proj.name %>" target="_blank" rel="noopener noreferrer">`);
+    var anchor = $(`<a href="/display?proj=<%- proj.name %>" target="_blank" rel="noopener noreferrer">`);
     var box = $('<div class="box">');
     var image = $('<figure class="image">').append($(`<img src="img/generative/<%- proj.name %>.png">`));
     var title = $(`<h1 class="title"><%- proj.title %></h1>`);
     var desc = $(`<p><%- proj.description %></p>`);
-    var tags = $('<div class="tags">');
     var tags = $(`<span class="tag is-light is-danger"><%- proj.tag %></span><span class="tag is-light is-link"><%- proj.language %></span>`);
 
     box.append(image).append(title).append(desc).append(tags);

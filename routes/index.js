@@ -19,8 +19,21 @@ router.get('/generative', (req, res) => {
   res.render('generative', {page: 'Generative', menuId: 'generative'});
 });
 
-router.get('/development', (req, res) => {
-  res.render('development', {page: 'Development', menuId: 'development', projects: projectList});
+router.get('/display', (req, res) => {
+  // Get the URL parameters
+  var query = req.url.split('?').splice(1);
+  var proj;
+  // Determine which project is being requested
+  query.forEach(q => {
+    var split = q.split('=');
+    if(split[0] == 'proj') {
+      proj = split[1]
+    }
+  })
+  
+  // Get the project's information
+  var show = projectList.filter(p => p.name == proj)[0];
+  res.render('display', {page: 'Display', menuId: 'display', project: show});
 });
 
 module.exports = router;

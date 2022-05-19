@@ -4,8 +4,6 @@ var path = require('path');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var generative = require('./public/scripts/generative');
-var projects = generative.loadProjects();
 var app = express();
 
 app.set('views', path.join(__dirname, 'views'));
