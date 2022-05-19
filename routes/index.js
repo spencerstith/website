@@ -1,13 +1,14 @@
 var express = require('express');
 var path = require('path');
 var router = express.Router();
+var projectList = require('../public/scripts/generative.json').projects;
 
 router.get('/', (req, res, next) => {
   res.render('index', {page: 'Home', menuId: 'home'});
 })
 
 router.get('/projects', (req, res) => {
-  res.render('projects', {page: 'Projects', menuId: 'projects'});
+  res.render('projects', {page: 'Projects', menuId: 'projects', projects: projectList});
 });
 
 router.get('/contact', (req, res) => {
@@ -19,7 +20,7 @@ router.get('/generative', (req, res) => {
 });
 
 router.get('/development', (req, res) => {
-  res.render('development', {page: 'Development', menuId: 'development'});
+  res.render('development', {page: 'Development', menuId: 'development', projects: projectList});
 });
 
 module.exports = router;

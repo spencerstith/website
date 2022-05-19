@@ -3,7 +3,6 @@
 
 <head>
   <%- include('partials/head'); %>
-    <script src="scripts/generative.js"></script>
 </head>
 
 <body>
@@ -14,12 +13,47 @@
       <p class="subtitle">All of these projects also have links to their repository on GitHub. I am always starting new
         projects and learning as much as possible.</p>
     </section>
-    <section id="proj-list" class="section"></section>
+    <div id="tetete">
 
+    </div>
+
+    <section id="proj-list" class="section"></section>
 </body>
-<%- include('partials/scripts'); %>
-  <script>
-    populateProjects();
-  </script>
+
+<script type="text/javascript">
+  var el = $('<div>');
+  const columnCount = 3;
+  var columns = $('<div class="columns is-desktop has-text-centered">');
+  var len = <%- projects.length %>
+  var index = 0;
+  <% projects.forEach(proj => { %>
+    // Determine which column this should go in
+    var columnNumber = index % columnCount + 1;
+    index++;
+
+    var column = $('<div class="column">');
+    var anchor = $(`<a href="/development?proj=<%- proj.name %>" target="_blank" rel="noopener noreferrer">`);
+    var box = $('<div class="box">');
+    var image = $('<figure class="image">').append($(`<img src="img/generative/<%- proj.name %>.png">`));
+    var title = $(`<h1 class="title"><%- proj.title %></h1>`);
+    var desc = $(`<p><%- proj.description %></p>`);
+    var tags = $('<div class="tags">');
+    var tags = $(`<span class="tag is-light is-danger"><%- proj.tag %></span><span class="tag is-light is-link"><%- proj.language %></span>`);
+
+    box.append(image).append(title).append(desc).append(tags);
+    column.append(anchor.append(box));
+    columns.append(column);
+
+    if (columnNumber == columnCount || index == len) {
+      while (columnNumber < columnCount) {
+        columns.append($('<div class="column">'));
+        columnNumber++;
+      }
+      $("#proj-list").append(columns);
+
+      columns = $('<div class="columns is-desktop has-text-centered">');
+    }
+  <% }); %>
+</script>
 
 </html>
