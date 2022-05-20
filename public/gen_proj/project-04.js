@@ -3,7 +3,7 @@ let right;
 let convergence = 0.5;
 
 function setup() {
-  createCanvas(1200, 600);
+  createCanvas(1200, 600).parent("canvas");
   left = new Cluster(300, 150, false);
   right = new Cluster(900, 150, true);
 }

@@ -5,7 +5,7 @@ let hor;
 let pg;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(600, 600).parent("canvas");
   segments = 8;
   dist = width / segments;
   ver = [];

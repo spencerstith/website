@@ -4,40 +4,35 @@
             "tag": "Generative",
             "language": "p5.js",
             "description": "I made this for my wife when she was out of town. It says 'i miss you' over some purple rain.",
-            "name": "purple-rain",
-            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/purple-rain.js"
+            "name": "purple-rain"
         },
         {
             "title": "Backtracking Sudoku Solver",
             "tag": "Algorithms",
             "language": "p5.js",
             "description": "This using recursive backtracking to solve any Sudoku board. It is slightly modified in order to draw progress every frame.",
-            "name": "sudoku",
-            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/sudoku.js"
+            "name": "sudoku"
         },
         {
             "title": "Maze Generator",
             "tag": "Algorithms",
             "language": "p5.js",
             "description": "Creates a maze from a grid of cells using stack data structures and random choice.",
-            "name": "maze",
-            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/maze.js"
+            "name": "maze"
         },
         {
             "title": "Times Tables",
             "tag": "Algorithms",
             "language": "p5.js",
             "description": "Connection between the Mandelbrot Set and times tables. Inspired by Mathologer on YouTube.",
-            "name": "t-tables",
-            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/t-tables.js"
+            "name": "t-tables"
         },
         {
             "title": "Circle Intersections",
             "tag": "Algorithms",
             "language": "p5.js",
             "description": "Intersections between horizontal and vertical circles at different rates.",
-            "name": "intersections",
-            "link": "https://github.com/spencerstith/website/blob/master/gen_proj/intersections.js"
+            "name": "intersections"
         }
     ]
 }

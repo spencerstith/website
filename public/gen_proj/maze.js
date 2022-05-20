@@ -7,8 +7,7 @@ let solutionStack = [];
 let solutionFound = false;
 
 function setup() {
-  createCanvas(601, 601);
-
+  createCanvas(601, 601).parent("canvas");
   for (let i = 0; i < cellCount; i++) {
     let row = [];
     for (let j = 0; j < cellCount; j++) {

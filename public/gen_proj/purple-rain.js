@@ -2,7 +2,7 @@ let drops;
 let saved = false;
 
 function setup() {
-    createCanvas(600, 600);
+  createCanvas(600, 600).parent("canvas")
     //stroke(200, 0, 255);
     drops = [];
     let xVel = random(-10, 10);

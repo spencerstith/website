@@ -11,9 +11,24 @@
 
 <body>
   <%- include('partials/nav'); %>
-    <script type="text/javascript">
-      document.body.appendChild(document.createElement('script')).src = 'gen_proj/<%- project.name %>.js';
-    </script>
+  <div class="columns is-desktop has-text-centered mt-5">
+    <div id="canvas" class="column">
+      
+    </div>
+    <div id="information" class="column">
+      <div class="title"><%- project.title %></div>
+      <p><%- project.description %></p>
+      <span class="tag is-light is-danger"><%- project.tag %></span><span class="tag is-light is-link"><%- project.language %></span>
+      <a class="button is-dark ml-5" href="https://github.com/spencerstith/website/blob/main/public/gen_proj/<%- project.name %>.js">
+        <span>GitHub</span>
+      </a>
+    </div>
+  </div>
+  
 </body>
+<%- include('partials/scripts'); %>
+<script type="text/javascript">
+  document.body.appendChild(document.createElement('script')).src = 'gen_proj/<%- project.name %>.js';
+</script>
 
 </html>
