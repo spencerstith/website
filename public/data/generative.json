@@ -1,13 +1,6 @@
 {
   "projects": [
     {
-      "title": "Purple Rain",
-      "tag": "Generative",
-      "language": "p5.js",
-      "description": "I made this for my wife when she was out of town. It says 'i miss you' over some purple rain.",
-      "name": "purple-rain"
-    },
-    {
       "title": "Backtracking Sudoku Solver",
       "tag": "Algorithms",
       "language": "p5.js",
@@ -29,6 +22,13 @@
       "name": "t-tables"
     },
     {
+      "title": "Purple Rain",
+      "tag": "Generative",
+      "language": "p5.js",
+      "description": "I made this for my wife when she was out of town. It says 'i miss you' over some purple rain.",
+      "name": "purple-rain"
+    },
+    {
       "title": "Circle Intersections",
       "tag": "Algorithms",
       "language": "p5.js",
@@ -41,6 +41,13 @@
       "language": "p5.js",
       "description": "Just a random small project I made to replicate the physics of water fountains.",
       "name": "fountain"
+    },
+    {
+      "title": "Hair",
+      "tag": "Mathematics",
+      "language": "p5.js",
+      "description": "Particles following a vector field. Turns out that looks like hair.",
+      "name": "hair"
     }
   ]
 }
