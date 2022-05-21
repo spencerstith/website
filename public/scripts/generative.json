@@ -17,7 +17,7 @@
             "title": "Maze Generator",
             "tag": "Algorithms",
             "language": "p5.js",
-            "description": "Creates a maze from a grid of cells using stack data structures and random choice.",
+            "description": "Creates a maze from a grid of cells using stack data structures and random choice. Inspired by Dan Shiffman.",
             "name": "maze"
         },
         {

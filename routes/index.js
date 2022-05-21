@@ -15,10 +15,6 @@ router.get('/contact', (req, res) => {
   res.render('contact', {page: 'Contact', menuId: 'contact'});
 });
 
-router.get('/generative', (req, res) => {
-  res.render('generative', {page: 'Generative', menuId: 'generative'});
-});
-
 router.get('/display', (req, res) => {
   // Get the URL parameters
   var query = req.url.split('?').splice(1);

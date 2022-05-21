@@ -1,19 +1,17 @@
-let segments;
-let dist;
 let ver;
 let hor;
 let pg;
 
 function setup() {
   createCanvas(600, 600).parent("canvas");
-  segments = 8;
-  dist = width / segments;
+  let segments = 7;
+  let dist = width / (segments + 1);
   ver = [];
   hor = [];
-  for (let i = 0; i < segments - 1; i++) {
-    let begin = dist / 2 + dist;
+  for (let i = 0; i < segments; i++) {
+    let begin = dist * 3 / 2;
     let loc = begin + dist * i;
-    let rate = 0.045 / (ver.length) * (i + 1);
+    let rate = 0.09 / segments * (i + 1);
     ver.push(new Rotator(createVector(loc, dist / 2), rate, 0.75 * dist, true));
     hor.push(new Rotator(createVector(dist / 2, loc), rate, 0.75 * dist, false));
   }
@@ -41,6 +39,9 @@ function draw() {
     }
   }
   image(pg, 0, 0);
+  if (frameCount == 500) {
+    save('test.png');
+  }
 }
 
 class Rotator {
