@@ -1,7 +1,6 @@
 var express = require('express');
-var path = require('path');
 var router = express.Router();
-var projectList = require('../public/scripts/generative.json').projects;
+var projectList = require('../public/data/generative.json').projects;
 
 router.get('/', (req, res, next) => {
   res.render('index', {page: 'Home', menuId: 'home'});
