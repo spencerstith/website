@@ -36,6 +36,13 @@
       "name": "intersections"
     },
     {
+      "title": "Typical Snake",
+      "tag": "Game",
+      "language": "p5.js",
+      "description": "Your typical snake game. Minimal with nice colors. WASD to  move.",
+      "name": "snake"
+    },
+    {
       "title": "Fountain",
       "tag": "Visual",
       "language": "p5.js",
